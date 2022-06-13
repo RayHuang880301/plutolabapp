@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Header from '../components/header/Header'
+import Navbar from '../components/Navbar/Navbar'
 import FrontCover from '../components/frontCover/FrontCover'
 import Info from '../components/info/Info'
 import Work from '../components/work/Work'
@@ -17,7 +17,7 @@ export default function Home() {
         <meta property="og:image" content=""></meta>
         <meta property="og:description" content="With the theme of interactive music NFT, Pluto Lab is committed to developing a community of music lovers in the web3 and NFT world."></meta>
       </Head>
-      <Header />
+      <Navbar />
       <FrontCover />
       <Info />
       <Work />
