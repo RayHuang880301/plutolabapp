@@ -1,0 +1,10 @@
+.section {
+  background-color: #056FD8;
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  flex: none;
+  margin: 5rem 2rem;
+}
