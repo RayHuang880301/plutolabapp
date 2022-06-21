@@ -1,0 +1,33 @@
+.section {
+  background-color: #056FD8;
+  
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  align-items: center;
+  width: 80%;
+  min-width: 80vw;
+}
+
+.item {
+  flex: none;
+  /* margin: 5rem 2rem; */
+}
+/* 
+@media (max-width: 1000px) {
+  .container {
+      flex-wrap: wrap;
+  }
+  .item {
+      width: 80%;
+  }   
+} */
+/* 
+@media (max-width: 500px) {
+  .aboutImg {
+      padding: 1rem;
+  } */

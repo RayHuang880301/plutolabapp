@@ -1,0 +1,30 @@
+.section {
+  height: 100vh;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.container > h1 {
+  margin: auto;
+  padding: 5rem;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.itemBox {
+  display: flex;
+  justify-content:space-around;
+}
+
+/* .item1 {
+  width: 100px;
+  height: 100px;
+  background: #000000;
+} */

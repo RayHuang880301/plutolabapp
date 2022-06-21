@@ -1,0 +1,34 @@
+.section {
+  background-color: #056FD8;
+  color: white;
+  height: 100vh;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.title > h1 {
+  padding: 4rem 0;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.itemBox {
+  display: flex;
+  justify-content:space-around;
+}
+
+.bottomCard {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}

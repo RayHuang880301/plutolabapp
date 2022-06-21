@@ -1,0 +1,18 @@
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem;
+  height: 150px;
+  background: #E2E2E2;
+  border: 1px solid #000000;
+}
+
+.mediaBox {
+  display: flex;
+  align-items: center;
+}
+
+.mediaIcon {
+  margin: 5rem;
+}
