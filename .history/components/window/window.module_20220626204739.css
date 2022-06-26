@@ -1,0 +1,43 @@
+.cardShadow {
+  position: absolute;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+}
+
+.boxShadow {
+  height: 30px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #000000;
+}
+
+.window {
+  position: absolute;
+  text-align: start;
+  background: #E2E2E2;
+  border: 1px solid #000000;
+}
+
+.topBox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 30px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #000000;
+}
+
+.img {
+  margin: 0 0.8rem;
+  cursor: pointer;
+}
+
+.content {
+  background: green;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  font-size: 32px;
+  /* padding: 2rem; */
+  height: 80%;
+  width: 80%:
+}

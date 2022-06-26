@@ -1,0 +1,45 @@
+.section {
+  background-color: #056FD8;
+  color: white;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.title > h1 {
+  padding: 2rem 0 0 0;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.windowBox {
+  flex: auto;
+}
+
+.itemBox {
+  display: flex;
+  justify-content:space-around;
+}
+
+.bottomCard {
+  display: flex;
+  align-items: flex-end;
+}
+
+.hr {
+  margin: 0 2rem;
+  height: 40px;
+  flex: auto;
+  border-top: 1px solid white;
+}
