@@ -10,7 +10,7 @@ const Info = () => {
   return (
     <div className={styles.section}>
       <div className={styles.container}>
-        <WindowLag top={10} left={5} width={400} height={185}>Welcome to Pluto Mateverse</WindowLag>
+        <Window top={10} left={5} width={400} height={185}>Welcome to Pluto Mateverse</Window>
         <div className={styles.logo} data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
           <Image src={plutoLabLogo} width={400} height={270} alt=''/>
         </div>
