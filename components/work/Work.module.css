@@ -55,21 +55,25 @@
   padding: 2rem 0;
   background: #FFFFFF;
   overflow: hidden;
+  position: relative;
 }
 
 .marquee div {
   /* background: green; */
-  display: block;
-  width: 300%;
+  display: flex;
+  /* width: 300%; */
   position: absolute;
   overflow: hidden;
-  animation: marquee 20s linear infinite;
+  animation: marquee 2s linear infinite;
+}
+.marqueeImage {
+  height: 30px;
 }
 
-  @keyframes marquee {
-    0% { left: 0; }
-    100% { left: -100%; }
-  }
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-5%); }
+}
 /* 
 @media (max-width: 1000px) {
   .container {

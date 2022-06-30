@@ -28,21 +28,27 @@ const Work = () => {
       </div>
       <div className={styles.marquee}>
         <div>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
+        <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
+          <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
+          <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
+          <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
+          <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
+          <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
+          <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
+          <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
+          <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
+          <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
+          <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
+          <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
+          <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
+          <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
+          <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
+          <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
+          <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
+          <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
+          <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
+          <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
+          
         </div>
       </div>
     </div>
