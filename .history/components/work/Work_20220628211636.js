@@ -29,6 +29,7 @@ const Work = () => {
       <div className={styles.marquee}>
         <div>
           <Image src={marqueeLogo} width={187} height={30} alt=''/>
+          {/* <Image src={marqueeLogo} width={187} height={30} alt=''/>
           <Image src={marqueeLogo} width={187} height={30} alt=''/>
           <Image src={marqueeLogo} width={187} height={30} alt=''/>
           <Image src={marqueeLogo} width={187} height={30} alt=''/>
@@ -41,8 +42,7 @@ const Work = () => {
           <Image src={marqueeLogo} width={187} height={30} alt=''/>
           <Image src={marqueeLogo} width={187} height={30} alt=''/>
           <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
+          <Image src={marqueeLogo} width={187} height={30} alt=''/> */}
         </div>
       </div>
     </div>

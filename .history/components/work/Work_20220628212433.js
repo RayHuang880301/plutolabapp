@@ -35,14 +35,6 @@ const Work = () => {
           <Image src={marqueeLogo} width={187} height={30} alt=''/>
           <Image src={marqueeLogo} width={187} height={30} alt=''/>
           <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
         </div>
       </div>
     </div>

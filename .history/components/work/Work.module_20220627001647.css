@@ -45,25 +45,23 @@
   text-align: left;
 }
 
-.intro > h3 {
-  font-weight: 400;
-}
-
 .marquee {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 0.5rem 0;
   background: #FFFFFF;
   overflow: hidden;
 }
 
 .marquee div {
-  /* background: green; */
   display: block;
-  width: 300%;
+  width: 200%;
+  height: 30px;
+
   position: absolute;
   overflow: hidden;
-  animation: marquee 20s linear infinite;
+
+  animation: marquee 5s linear infinite;
 }
 
   @keyframes marquee {

@@ -42,11 +42,8 @@
   margin: 1rem 0;
   width: 70%;
   line-height: 1.8rem;
-  text-align: left;
-}
-
-.intro > h3 {
   font-weight: 400;
+  text-align: left;
 }
 
 .marquee {

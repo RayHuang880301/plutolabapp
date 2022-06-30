@@ -29,20 +29,20 @@ const Work = () => {
       <div className={styles.marquee}>
         <div>
           <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
+          <Image src={marqueeLogo} width={180} height={50} alt=''/>
+          <Image src={marqueeLogo} width={180} height={50} alt=''/>
+          <Image src={marqueeLogo} width={180} height={50} alt=''/>
+          <Image src={marqueeLogo} width={180} height={50} alt=''/>
+          <Image src={marqueeLogo} width={180} height={50} alt=''/>
+          <Image src={marqueeLogo} width={180} height={50} alt=''/>
+          <Image src={marqueeLogo} width={180} height={50} alt=''/>
+          <Image src={marqueeLogo} width={180} height={50} alt=''/>
+          <Image src={marqueeLogo} width={180} height={50} alt=''/>
+          <Image src={marqueeLogo} width={180} height={50} alt=''/>
+          <Image src={marqueeLogo} width={180} height={50} alt=''/>
+          <Image src={marqueeLogo} width={180} height={50} alt=''/>
+          <Image src={marqueeLogo} width={180} height={50} alt=''/>
+          <Image src={marqueeLogo} width={180} height={50} alt=''/>
         </div>
       </div>
     </div>

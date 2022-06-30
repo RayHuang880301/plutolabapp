@@ -11,15 +11,17 @@ const Work = () => {
         <div className={styles.title} data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
           <h1>Previous Work</h1>
         </div>
-        <div className={styles.items}>
-          <div className={styles.item}>
-            <Image src={pluto} width={250} height={250} alt=''/>
-          </div>
-          <div className={styles.item}>
-            <Image src={pluto} width={250} height={250} alt=''/>
-          </div>
-          <div className={styles.item}>
-            <Image src={pluto} width={250} height={250} alt=''/>
+        <div>
+          <div className={styles.items}>
+            <div className={styles.item}>
+              <Image src={pluto} width={250} height={250} alt=''/>
+            </div>
+            <div className={styles.item}>
+              <Image src={pluto} width={250} height={250} alt=''/>
+            </div>
+            <div className={styles.item}>
+              <Image src={pluto} width={250} height={250} alt=''/>
+            </div>
           </div>
         </div>
         <div className={styles.intro}>

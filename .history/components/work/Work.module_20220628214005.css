@@ -24,7 +24,7 @@
   font-weight: 800;
 }
 
-.items {
+.itemsMarquee {
   display: flex;
   flex-wrap: nowrap;
   margin: 1rem 2rem;

@@ -45,10 +45,6 @@
   text-align: left;
 }
 
-.intro > h3 {
-  font-weight: 400;
-}
-
 .marquee {
   display: flex;
   align-items: center;
@@ -60,15 +56,15 @@
 .marquee div {
   /* background: green; */
   display: block;
-  width: 300%;
+  /* width: 300%; */
   position: absolute;
   overflow: hidden;
   animation: marquee 20s linear infinite;
 }
 
   @keyframes marquee {
-    0% { left: 0; }
-    100% { left: -100%; }
+    0% { left: 100%; }
+    100% { left: 0; }
   }
 /* 
 @media (max-width: 1000px) {

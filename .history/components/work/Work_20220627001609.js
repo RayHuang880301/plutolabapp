@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../work/Work.module.css'
 import pluto from '../../assets/pluto.gif'
 import Image from 'next/image'
-import marqueeLogo from '../../assets/marqueeLogo.png'
+import CarouselLogo from '../../assets/carouselLogo.svg'
 
 const Work = () => {
   return (
@@ -27,23 +27,7 @@ const Work = () => {
         </div>
       </div>
       <div className={styles.marquee}>
-        <div>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-          <Image src={marqueeLogo} width={187} height={30} alt=''/>
-        </div>
+        <div><Image src={CarouselLogo} width={180} height={50} alt=''/></div>
       </div>
     </div>
   )

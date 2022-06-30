@@ -45,31 +45,24 @@
   text-align: left;
 }
 
-.intro > h3 {
-  font-weight: 400;
-}
-
-.marquee {
+.carousel {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 0.5rem 0;
   background: #FFFFFF;
-  overflow: hidden;
 }
 
-.marquee div {
-  /* background: green; */
-  display: block;
-  width: 300%;
-  position: absolute;
-  overflow: hidden;
-  animation: marquee 20s linear infinite;
-}
-
-  @keyframes marquee {
-    0% { left: 0; }
-    100% { left: -100%; }
+@keyframes carousel {
+  0% {
+   left: 100%;
+   transform: translateX(0%);
   }
+ 
+  100% {
+   left: 0;
+   transform: translateX(-100%);
+  }
+ }
 /* 
 @media (max-width: 1000px) {
   .container {

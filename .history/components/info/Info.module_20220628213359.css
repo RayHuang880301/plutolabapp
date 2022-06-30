@@ -11,6 +11,10 @@
   height: 100vh;
 }
 
+.topCard > h1 {
+  margin: 2rem;
+}
+
 .bottomCard {
   position: absolute;
   display: flex;
