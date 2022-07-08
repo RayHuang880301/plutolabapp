@@ -11,6 +11,9 @@ import Footer from '../components/footer/Footer'
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import { DndProvider, useDrop } from 'react-dnd'
+import { HTML5Backend } from 'react-dnd-html5-backend'
+
 export default function Home() {
   useEffect(() => {
     AOS.init();
@@ -30,7 +33,11 @@ export default function Home() {
       </Head>
       {/* <Header /> */}
       <FrontCover />
+      <DndProvider backend={HTML5Backend}>
+
       <Info />
+      </DndProvider>
+
       <Work />
       <Investors />
       <Contact />

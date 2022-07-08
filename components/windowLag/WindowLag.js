@@ -35,27 +35,26 @@ const WindowLag = (props) => {
 
 
   return (
-    <Draggable
-    nodeRef={nodeRef}
-    handle=".handle"
-        defaultPosition={{x: 0, y: 0}}
-        position={null}
-        grid={[25, 25]}
-        scale={1}
-        onStart={handle}
-        onDrag={handle}
-        onStop={handle}
-         >
-      <div ref={nodeRef}>
+    // <Draggable
+    // nodeRef={nodeRef}
+    // handle=".handle"
+    //     defaultPosition={{x: 0, y: 0}}
+    //     position={null}
+    //     grid={[25, 25]}
+    //     scale={1}
+    //     onStart={handle}
+    //     onDrag={handle}
+    //     onStop={handle}
+    //      >
+      <div>
         {/* <div className={styles.cardShadow} style={cardStyle}>
           <div className={styles.boxShadow} />
         </div> */}
         <div className={styles.window} style={windowStyle}>
           <div className={styles.topBox}>
-            <h1>TEST</h1>
-            {/* <div className={styles.img}><Image src={substract} width={14} height={14} alt='' /></div>
+            <div className={styles.img}><Image src={substract} width={14} height={14} alt='' /></div>
             <div className={styles.img}><Image src={reactangle} width={14} height={14} alt='' /></div>
-            <div className={styles.img}><Image src={close} width={14} height={14} alt='' /></div> */}
+            <div className={styles.img}><Image src={close} width={14} height={14} alt='' /></div>
           </div>
           <div className={styles.content}>
             {children}
@@ -63,7 +62,7 @@ const WindowLag = (props) => {
         </div>
 
       </div>
-    </Draggable>
+    // </Draggable>
   )
 }
 

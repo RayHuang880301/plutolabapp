@@ -13,6 +13,7 @@
 }
 
 .window {
+  cursor: move;
   /* display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,5 +49,6 @@
   line-height: 2.5rem;
   /* padding: 2rem; */
   height: 80%;
-  width: 80%;
+  /* width: 80%; */
+  text-align: center;
 }
