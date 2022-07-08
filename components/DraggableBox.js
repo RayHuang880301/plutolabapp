@@ -57,7 +57,7 @@ const DraggableBox = memo(function DraggableBox(
       style={getStyles(left, top, isDragging, zIndex)}
       role="DraggableBox"
       onMouseDown={onClick}
-      class="draggable-box"
+      className="draggable-box"
     >
       <WindowLag width={400} height={185}><p>{title}</p></WindowLag>
     </div>

@@ -10,6 +10,8 @@ import Contact from '../components/contact/Contact'
 import Footer from '../components/footer/Footer'
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ReactPageScroller from "../lib/pageScroller";
+
 
 import { DndProvider, useDrop } from 'react-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
@@ -21,6 +23,7 @@ export default function Home() {
   }, []);
   return (
     <>
+
       <Head>
         <title>PlutoLab</title>
         <meta property="og:type" content="website" />
@@ -32,16 +35,22 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet"></link>
       </Head>
       {/* <Header /> */}
-      <FrontCover />
       <DndProvider backend={HTML5Backend}>
 
-      <Info />
+        <ReactPageScroller>
+          <FrontCover />
+
+          <Info />
+
+          <Work />
+          <Investors />
+          <Contact />
+      <Footer />
+        </ReactPageScroller>
+
+
       </DndProvider>
 
-      <Work />
-      <Investors />
-      <Contact />
-      <Footer />
     </>
   )
 }
