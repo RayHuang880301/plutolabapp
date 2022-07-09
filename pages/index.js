@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Header from '../components/header/Header'
@@ -10,14 +10,27 @@ import Contact from '../components/contact/Contact'
 import Footer from '../components/footer/Footer'
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ReactPageScroller from "../lib/pageScroller";
+
+
+import { DndProvider, useDrop } from 'react-dnd'
+import { HTML5Backend } from 'react-dnd-html5-backend'
 
 export default function Home() {
+  const [pageNumber, setPageNumber] = useState(1);
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      once: false,
+    });
     AOS.refresh();
   }, []);
+  const handlePageChange = (number) => {
+    console.log(number)
+    setPageNumber(number);
+  };
   return (
     <>
+
       <Head>
         <title>PlutoLab</title>
         <meta property="og:type" content="website" />
@@ -29,12 +42,22 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet"></link>
       </Head>
       {/* <Header /> */}
-      <FrontCover />
-      <Info />
-      <Work />
-      <Investors />
-      <Contact />
+      <DndProvider backend={HTML5Backend}>
+
+        <ReactPageScroller
+          pageOnChange={handlePageChange}
+        >
+          <FrontCover isAosOn={pageNumber === 0} />
+          <Info isAosOn={pageNumber === 1} />
+          <Work isAosOn={pageNumber === 2} />
+          <Investors isAosOn={pageNumber === 3} />
+          <Contact isAosOn={pageNumber === 4} />
       <Footer />
+        </ReactPageScroller>
+
+
+      </DndProvider>
+
     </>
   )
 }

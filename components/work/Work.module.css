@@ -35,6 +35,13 @@
 .item {
   /* flex: none; */
   margin: 1rem 1rem;
+
+}
+
+.item > span {
+  /* flex: none; */
+  min-width: 150px;
+
 }
 
 .intro {

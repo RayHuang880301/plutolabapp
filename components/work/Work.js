@@ -4,11 +4,13 @@ import pluto from '../../assets/pluto.gif'
 import Image from 'next/image'
 import marqueeLogo from '../../assets/marqueeLogo.png'
 
-const Work = () => {
+const Work = (props) => {
+  const { isAosOn } = props;
+
   return (
     <div className={styles.section}>
       <div className={styles.container}>
-        <div className={styles.title} data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+        <div className={`${styles.title} ${isAosOn ? 'aos-animate' : ''}`} data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
           <h1>Previous Work</h1>
         </div>
         <div className={styles.items}>

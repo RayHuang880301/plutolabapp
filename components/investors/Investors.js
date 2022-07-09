@@ -7,11 +7,13 @@ import aceLogo from '../../assets/aceLogo.png'
 import Image from 'next/image'
 import plutoLabLogo from '../../assets/plutoLabLogo.png'
 
-const Investors = () => {
+const Investors = (props) => {
+  const { isAosOn } = props;
+
   return (
     <div className={styles.section}>
       <div className={styles.container}>
-        <div className={styles.title} data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+        <div className={`${styles.title} ${isAosOn ? 'aos-animate' : ''}`} data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
           <h1>Investors</h1>
         </div>
         <div className={styles.windowBox}>
