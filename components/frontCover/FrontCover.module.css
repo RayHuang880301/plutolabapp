@@ -36,3 +36,13 @@
     opacity: 0; 
   }
 }
+.p {
+  transform: rotateY(45deg);
+	animation: rotateAnimation 4s linear infinite;
+}
+
+@keyframes rotateAnimation {
+	0% {transform: rotateY(0deg);}
+	50% {transform: rotateY(180deg);}
+  100% {transform: rotateY(360deg);}
+}

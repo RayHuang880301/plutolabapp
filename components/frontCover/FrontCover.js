@@ -20,7 +20,7 @@ const FrontCover = () => {
   return (
     <div className={`${styles.section}  ${isAppear ? '' : styles.sectionDisappear}`}>
       <div className={styles.container}>
-        <Image src={pImg} width={300} height={300} alt='' />
+        <div className={styles.p}><Image src={pImg} width={300} height={300} alt='' /></div>
       </div>
     </div>
   )

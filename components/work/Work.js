@@ -1,27 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from '../work/Work.module.css'
 import pluto from '../../assets/pluto.gif'
+import gecko from '../../assets/gecko.gif'
+import studio from '../../assets/studio.gif'
+import plutoDefaultLogo from '../../assets/plutoDefaultLogo.png'
+import geckoDefaultLogo from '../../assets/geckoDefaultLogo.png'
+import plutoBg from '../../assets/plutoBg.png'
 import Image from 'next/image'
 import marqueeLogo from '../../assets/marqueeLogo.png'
+import ImgCard from '../ImgCard/ImgCard'
 
 const Work = (props) => {
   const { isAosOn } = props;
-
+  const [duration, setDuration] = useState('12s')
+  const itemsStyle = {
+    animationDuration: duration,
+  }
   return (
     <div className={styles.section}>
       <div className={styles.container}>
         <div className={`${styles.title} ${isAosOn ? 'aos-animate' : ''}`} data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
           <h1>Previous Work</h1>
         </div>
-        <div className={styles.items}>
-          <div className={styles.item}>
-            <Image src={pluto} width={250} height={250} alt=''/>
-          </div>
-          <div className={styles.item}>
-            <Image src={pluto} width={250} height={250} alt=''/>
-          </div>
-          <div className={styles.item}>
-            <Image src={pluto} width={250} height={250} alt=''/>
+        <div className={styles.itemsMarquee}>
+          <div className={styles.items} style={itemsStyle}>
+            <ImgCard src={pluto} defaultLogo={plutoDefaultLogo} bg={plutoBg} link="https://plutohiphopdept.com/" intro="" width={250} height={250} alt=''/>
+            <ImgCard src={gecko} defaultLogo={geckoDefaultLogo} bg={plutoBg} link="https://plutohiphopdept.com/" intro="" width={250} height={250} alt=''/>
+            <ImgCard src={studio} defaultLogo={plutoDefaultLogo} bg={plutoBg} link="https://plutohiphopdept.com/" intro="" width={250} height={250} alt=''/>
+            <ImgCard src={pluto} defaultLogo={plutoDefaultLogo} bg={plutoBg} link="https://plutohiphopdept.com/" intro="Pluto Lab x Demi-Human Studio" width={250} height={250} alt=''/>
+            <ImgCard src={pluto} defaultLogo={plutoDefaultLogo} bg={plutoBg} link="https://plutohiphopdept.com/" intro="" width={250} height={250} alt=''/>
+            <ImgCard src={pluto} defaultLogo={plutoDefaultLogo} bg={plutoBg} link="https://plutohiphopdept.com/" intro="" width={250} height={250} alt=''/>
+            <ImgCard src={pluto} defaultLogo={plutoDefaultLogo} bg={plutoBg} link="https://plutohiphopdept.com/" intro="" width={250} height={250} alt=''/>
+            <ImgCard src={pluto} defaultLogo={plutoDefaultLogo} bg={plutoBg} link="https://plutohiphopdept.com/" intro="" width={250} height={250} alt=''/>
           </div>
         </div>
         <div className={styles.intro}>
@@ -30,7 +40,6 @@ const Work = (props) => {
       </div>
       <div className={styles.marquee}>
         <div>
-        <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
           <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
           <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
           <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
@@ -50,7 +59,7 @@ const Work = (props) => {
           <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
           <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
           <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
-          
+          <Image layout="fixed" src={marqueeLogo} width={187} height={30} alt=''/>
         </div>
       </div>
     </div>
