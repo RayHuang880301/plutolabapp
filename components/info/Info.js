@@ -21,7 +21,8 @@ const contStyles = {
 }
 
 
-const Info = () => {
+const Info = (props) => {
+  const { isAosOn } = props;
   const [boxes, setBoxes] = useState({
     a: { zIndex: 1, top: 20, left: 20, title: 'Welcome to Pluto Mateverse', animationDelay: 800 },
     b: { zIndex: 1, top: 60, left: 40, title: 'Welcome to Pluto Mateverse', animationDelay: 1000 },
@@ -86,6 +87,7 @@ const onClickDrag = (key) => {
        <div className="draggable-container">
           {Object.keys(boxes).map((key) => (
           <DraggableBox
+            isAosOn={isAosOn}
             key={key}
             id={key}
             onClick={() => onClickDrag(key)}
@@ -95,10 +97,10 @@ const onClickDrag = (key) => {
         ))}
       </div>
       <div className={styles.container}>
-        <div className={styles.logo} data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+        <div className={`${styles.logo} ${isAosOn ? 'aos-animate' : ''}`} data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
           <Image src={plutoLabLogo} width={400} height={270} alt=''/>
         </div>
-        <div className={styles.bottomCard} data-aos="fade-down" data-aos-easing="linear" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+        <div className={`${styles.bottomCard} ${isAosOn ? 'aos-animate' : ''}`} data-aos="fade-down" data-aos-easing="linear" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
           <h2>Previous Work</h2>
           <div className={styles.arrow}><Image src={downArrow} width={30} height={30} alt=''/></div>
         </div>

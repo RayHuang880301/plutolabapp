@@ -2,11 +2,12 @@ import React from 'react'
 import styles from './Contact.module.css'
 import Image from 'next/image'
 
-const Contact = () => {
+const Contact = (props) => {
+  const { isAosOn } = props;
   return (
     <div className={styles.section}>
       <div className={styles.container}>
-        <div className={styles.title} data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+        <div className={`${styles.title} ${isAosOn ? 'aos-animate' : ''}`} data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
           <h1>Contact Pluto</h1>
         </div>
         <div className={styles.itemBox}>

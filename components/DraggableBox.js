@@ -32,7 +32,7 @@ function getStyles(
 const DraggableBox = memo(function DraggableBox(
   props,
 ) {
-  const { id, title, left, top, onClick, zIndex, animationDelay } = props
+  const { id, title, left, top, onClick, zIndex, animationDelay, isAosOn } = props
   const [{ isDragging }, drag, preview] = useDrag(
     () => ({
       type: ItemTypes.BOX,
@@ -50,14 +50,14 @@ const DraggableBox = memo(function DraggableBox(
 
   return (
     <div
-    data-aos="flip-left"
-    data-aos-duration="50"
-    data-aos-delay={animationDelay}
+      data-aos="flip-left"
+      data-aos-duration="50"
+      data-aos-delay={animationDelay}
       ref={drag}
       style={getStyles(left, top, isDragging, zIndex)}
       role="DraggableBox"
       onMouseDown={onClick}
-      className="draggable-box"
+      className={`draggable-box ${isAosOn ? 'aos-animate' : ''}`}
     >
       <WindowLag width={400} height={185}><p>{title}</p></WindowLag>
     </div>

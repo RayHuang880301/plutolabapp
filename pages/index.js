@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Header from '../components/header/Header'
@@ -17,10 +17,17 @@ import { DndProvider, useDrop } from 'react-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
 
 export default function Home() {
+  const [pageNumber, setPageNumber] = useState(1);
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      once: false,
+    });
     AOS.refresh();
   }, []);
+  const handlePageChange = (number) => {
+    console.log(number)
+    setPageNumber(number);
+  };
   return (
     <>
 
@@ -37,14 +44,14 @@ export default function Home() {
       {/* <Header /> */}
       <DndProvider backend={HTML5Backend}>
 
-        <ReactPageScroller>
-          <FrontCover />
-
-          <Info />
-
-          <Work />
-          <Investors />
-          <Contact />
+        <ReactPageScroller
+          pageOnChange={handlePageChange}
+        >
+          <FrontCover isAosOn={pageNumber === 0} />
+          <Info isAosOn={pageNumber === 1} />
+          <Work isAosOn={pageNumber === 2} />
+          <Investors isAosOn={pageNumber === 3} />
+          <Contact isAosOn={pageNumber === 4} />
       <Footer />
         </ReactPageScroller>
 
