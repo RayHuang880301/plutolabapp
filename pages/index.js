@@ -11,6 +11,7 @@ import Footer from '../components/footer/Footer'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ReactPageScroller from "../lib/pageScroller";
+import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage';
 
 
 import { DndProvider, useDrop } from 'react-dnd'
@@ -30,7 +31,6 @@ export default function Home() {
   };
   return (
     <>
-
       <Head>
         <title>PlutoLab</title>
         <meta property="og:type" content="website" />
@@ -43,7 +43,29 @@ export default function Home() {
       </Head>
       {/* <Header /> */}
       <DndProvider backend={HTML5Backend}>
+        <Fullpage>
 
+          <FullPageSections>
+            {/* <FullpageSection>
+              <FrontCover />
+            </FullpageSection> */}
+            <FullpageSection>
+              <Info />
+            </FullpageSection>
+            <FullpageSection>
+              <Work />
+            </FullpageSection>
+            <FullpageSection>
+              <Investors />
+            </FullpageSection>
+            <FullpageSection>
+              <Contact />
+            </FullpageSection>
+          </FullPageSections>
+
+        </Fullpage>
+      </DndProvider>
+      {/* <DndProvider backend={HTML5Backend}>
         <ReactPageScroller
           pageOnChange={handlePageChange}
         >
@@ -52,11 +74,9 @@ export default function Home() {
           <Work isAosOn={pageNumber === 2} />
           <Investors isAosOn={pageNumber === 3} />
           <Contact isAosOn={pageNumber === 4} />
-      <Footer />
         </ReactPageScroller>
-
-
-      </DndProvider>
+        {pageNumber === 4 && <Footer />}
+      </DndProvider> */}
 
     </>
   )

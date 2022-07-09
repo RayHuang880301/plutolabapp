@@ -12,6 +12,13 @@ import { DndProvider, useDrop } from 'react-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
 import { memo, useCallback, useState, useEffect } from 'react'
 import update from 'immutability-helper'
+import dynamic from 'next/dynamic'
+import Header from '../header/Header'
+// import FrontCover from '../frontCover/FrontCover'
+
+const DynamicComponentWithNoSSR = dynamic(() => import('../frontCover/FrontCover'), {
+  ssr: false
+})
 
 const contStyles = {
   width: 800,
@@ -22,7 +29,8 @@ const contStyles = {
 
 
 const Info = (props) => {
-  const { isAosOn } = props;
+  // const { isAosOn } = props;
+  const isAosOn = true;
   const [boxes, setBoxes] = useState({
     a: { zIndex: 1, top: 20, left: 20, title: 'Welcome to Pluto Mateverse', animationDelay: 800 },
     b: { zIndex: 1, top: 60, left: 40, title: 'Welcome to Pluto Mateverse', animationDelay: 1000 },
@@ -83,6 +91,9 @@ const onClickDrag = (key) => {
   // }, [canDrop]);
 
   return (
+    <>
+    <Header />
+    <DynamicComponentWithNoSSR />
     <div styles={contStyles} className={styles.section} ref={dragRef}>
        <div className="draggable-container">
           {Object.keys(boxes).map((key) => (
@@ -106,6 +117,7 @@ const onClickDrag = (key) => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

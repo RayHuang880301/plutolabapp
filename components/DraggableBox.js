@@ -24,7 +24,7 @@ function getStyles(
     top,
     left,
     opacity: isDragging ? 0.6 : 1,
-    height: isDragging ? 0.6 : '',
+    // height: isDragging ? 0.6 : '',
     zIndex,
   }
 }
@@ -37,9 +37,12 @@ const DraggableBox = memo(function DraggableBox(
     () => ({
       type: ItemTypes.BOX,
       item: { id, left, top, title },
-      collect: (monitor) => ({
-        isDragging: monitor.isDragging(),
-      }),
+      collect: (monitor) => {
+        console.log('monitor', monitor)
+        return {
+          isDragging: monitor.isDragging()
+        }
+      },
     }),
     [id, left, top, title],
   )
