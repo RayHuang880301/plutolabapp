@@ -30,8 +30,10 @@
   text-align: start;
   background: #FFFFFF;
   border: 1px solid #000000;
-  width: 60vw;
-  height: 60vh;
+  width: 66vw;
+  max-width: 1024px;
+  height: 66vh;
+  max-height: 1024px;
 }
 
 .topBox {

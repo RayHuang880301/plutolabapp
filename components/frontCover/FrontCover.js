@@ -9,17 +9,17 @@ const initState = {
 const FrontCover = () => {
   const [isAppear, setIsAppear] = useState(1);
   const [init, setInit] = useState(0);
-  if(!init) {
-    console.log(init,isAppear)
-    setInit(1);
-    setTimeout(() => {
-      setIsAppear(0);
-      console.log(init,isAppear)
-    }, 3000);
-  }
+  // if(!init) {
+  //   console.log(init,isAppear)
+  //   setInit(1);
+  //   setTimeout(() => {
+  //     setIsAppear(0);
+  //     console.log(init,isAppear)
+  //   }, 3000);
+  // }
   return (
     <>
-    {isAppear ? <Header /> : ''}
+    {/* {isAppear ? <Header /> : ''} */}
     <div className={`${styles.section} ${isAppear ? '' : styles.sectionDisappear}`}>
       <div className={styles.container}>
         <div className={styles.p}><Image src={pImg} width={300} height={300} alt='' /></div>

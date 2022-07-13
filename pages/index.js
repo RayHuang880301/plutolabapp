@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, } from 'react'
+import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Header from '../components/header/Header'
@@ -16,6 +17,10 @@ import debounce from 'lodash/debounce'
 
 import { DndProvider, useDrop } from 'react-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
+
+const DynamicComponentWithNoSSR = dynamic(() => import('../components/frontCover/FrontCover'), {
+  ssr: false
+})
 
 export default function Home() {
   const [pageNumber, setPageNumber] = useState(1);
@@ -65,6 +70,9 @@ export default function Home() {
             {/* <FullpageSection>
               <FrontCover />
             </FullpageSection> */}
+            <FullpageSection>
+              <DynamicComponentWithNoSSR></DynamicComponentWithNoSSR>
+            </FullpageSection>
             <FullpageSection>
               <Info />
             </FullpageSection>

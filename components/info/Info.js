@@ -16,9 +16,6 @@ import dynamic from 'next/dynamic'
 import Header from '../header/Header'
 // import FrontCover from '../frontCover/FrontCover'
 
-const DynamicComponentWithNoSSR = dynamic(() => import('../frontCover/FrontCover'), {
-  ssr: false
-})
 
 const contStyles = {
   width: 800,
@@ -92,7 +89,8 @@ const onClickDrag = (key) => {
 
   return (
     <>
-    <DynamicComponentWithNoSSR />
+    {/* <DynamicComponentWithNoSSR /> */}
+    <Header />
     <div styles={contStyles} className={styles.section} ref={dragRef}>
        <div className="draggable-container">
           {Object.keys(boxes).map((key) => (
