@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Contact.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import Footer from '../footer/Footer'
 
 const Contact = (props) => {
   const { isAosOn } = props;
@@ -18,6 +19,7 @@ const Contact = (props) => {
           <Link href="https://discord.gg/plutolab"><a target="_blank" rel="noreferrer"><button className={styles.item}>E-mail</button></a></Link>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

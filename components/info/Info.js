@@ -32,11 +32,11 @@ const Info = (props) => {
   // const { isAosOn } = props;
   const isAosOn = true;
   const [boxes, setBoxes] = useState({
-    a: { zIndex: 1, top: 20, left: 20, title: 'Welcome to Pluto Mateverse', animationDelay: 800 },
-    b: { zIndex: 1, top: 60, left: 40, title: 'Welcome to Pluto Mateverse', animationDelay: 1000 },
+    // a: { zIndex: 1, top: 20, left: 20, title: 'Welcome to Pluto Mateverse', animationDelay: 800 },
+    // b: { zIndex: 1, top: 60, left: 40, title: 'Welcome to Pluto Mateverse', animationDelay: 1000 },
     c: { zIndex: 1, top: 100, left: 60, title: 'Welcome to Pluto Mateverse', animationDelay: 1200 },
-    d: { zIndex: 1, top: 140, left: 80, title: 'Welcome to Pluto Mateverse', animationDelay: 1400 },
-    e: { zIndex: 1, top: 180, left: 100, title: 'Welcome to Pluto Mateverse', animationDelay: 1600 },
+    // d: { zIndex: 1, top: 140, left: 80, title: 'Welcome to Pluto Mateverse', animationDelay: 1400 },
+    // e: { zIndex: 1, top: 180, left: 100, title: 'Welcome to Pluto Mateverse', animationDelay: 1600 },
   })
   const [dragZIndex, setDragZIndex] = useState(1);
 
@@ -92,7 +92,6 @@ const onClickDrag = (key) => {
 
   return (
     <>
-    <Header />
     <DynamicComponentWithNoSSR />
     <div styles={contStyles} className={styles.section} ref={dragRef}>
        <div className="draggable-container">

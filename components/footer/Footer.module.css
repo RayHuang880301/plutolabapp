@@ -1,9 +1,12 @@
 .section {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   padding: 1rem;
-  height: 150px;
+  height: 130px;
   background: #E2E2E2;
   border: 1px solid #000000;
 }

@@ -27,11 +27,9 @@ const Work = (props) => {
             <ImgCard src={pluto} defaultLogo={plutoDefaultLogo} bg={plutoBg} link="https://plutohiphopdept.com/" intro="" width={250} height={250} alt=''/>
             <ImgCard src={gecko} defaultLogo={geckoDefaultLogo} bg={plutoBg} link="https://plutohiphopdept.com/" intro="" width={250} height={250} alt=''/>
             <ImgCard src={studio} defaultLogo={plutoDefaultLogo} bg={plutoBg} link="https://plutohiphopdept.com/" intro="" width={250} height={250} alt=''/>
+            {/* TODO: demi */}
             <ImgCard src={pluto} defaultLogo={plutoDefaultLogo} bg={plutoBg} link="https://plutohiphopdept.com/" intro="Pluto Lab x Demi-Human Studio" width={250} height={250} alt=''/>
-            <ImgCard src={pluto} defaultLogo={plutoDefaultLogo} bg={plutoBg} link="https://plutohiphopdept.com/" intro="" width={250} height={250} alt=''/>
-            <ImgCard src={pluto} defaultLogo={plutoDefaultLogo} bg={plutoBg} link="https://plutohiphopdept.com/" intro="" width={250} height={250} alt=''/>
-            <ImgCard src={pluto} defaultLogo={plutoDefaultLogo} bg={plutoBg} link="https://plutohiphopdept.com/" intro="" width={250} height={250} alt=''/>
-            <ImgCard src={pluto} defaultLogo={plutoDefaultLogo} bg={plutoBg} link="https://plutohiphopdept.com/" intro="" width={250} height={250} alt=''/>
+        
           </div>
         </div>
         <div className={styles.intro}>

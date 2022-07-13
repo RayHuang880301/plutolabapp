@@ -12,23 +12,39 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ReactPageScroller from "../lib/pageScroller";
 import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage';
-
+import debounce from 'lodash/debounce'
 
 import { DndProvider, useDrop } from 'react-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
 
 export default function Home() {
   const [pageNumber, setPageNumber] = useState(1);
+  const onWheelHandler =  debounce(event => {
+    event.preventDefault();
+    event.stopPropagation();
+    const delta = Math.sign(event.deltaY);
+    console.info('wheel', delta);
+  }, 200, {
+    leading: true,
+    trailing: false
+  });
   useEffect(() => {
     AOS.init({
       once: false,
     });
     AOS.refresh();
+    window.addEventListener("wheel", onWheelHandler, { passive: false });
+    return () => {
+      console.log('remove wheel')
+      window.removeEventListener('wheel', onWheelHandler);
+    }
   }, []);
+  
   const handlePageChange = (number) => {
     console.log(number)
     setPageNumber(number);
   };
+  
   return (
     <>
       <Head>

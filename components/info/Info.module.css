@@ -1,7 +1,7 @@
 .section {
   position: relative;
-  height: 95%;
-  margin-top: 5%;
+  height: calc(100% - 70px);
+  /* margin-top: 5%; */
 }
 
 .container {
