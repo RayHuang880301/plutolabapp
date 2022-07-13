@@ -90,7 +90,7 @@ const onClickDrag = (key) => {
   return (
     <>
     {/* <DynamicComponentWithNoSSR /> */}
-    <Header />
+    {/* <Header /> */}
     <div styles={contStyles} className={styles.section} ref={dragRef}>
        <div className="draggable-container">
           {Object.keys(boxes).map((key) => (
