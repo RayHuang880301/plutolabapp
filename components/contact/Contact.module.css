@@ -7,8 +7,8 @@
   height: 100vh;
 }
 
-.container{
-  width: 95%;
+.container {
+  width: 80%;
   margin: auto;
   justify-content: center;
   text-align: center;
@@ -58,5 +58,9 @@
     width: 43%;
     font-size: 1.3rem;
     margin: .5rem;
+  }
+
+  .container {
+    width: 95%;
   }
 } 

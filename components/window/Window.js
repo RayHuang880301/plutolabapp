@@ -7,7 +7,7 @@ import reactangle from '../../assets/rectangle.svg'
 import close from '../../assets/close.svg'
 
 const Window = (props) => {
-  const { children, top, left, width, height, content} = props
+  const { children, top, left, width, height, content, className } = props
 
   const [windowStyle, setWindowStyle] = useState({
     top: `${top}%`,
@@ -46,10 +46,10 @@ const Window = (props) => {
 
   return (
     <>
-      <div className={styles.cardShadow} style={cardStyle}>
+      <div className={`${styles.cardShadow} ${className}`} style={cardStyle}>
         <div className={styles.boxShadow} />
       </div>
-      <div className={styles.window} style={windowStyle}>
+      <div className={`${styles.window} ${className}`} style={windowStyle}>
         <div className={styles.topBox}>
           <div className={styles.img}><Image src={substract} width={14} height={14} alt='' /></div>
           <div className={styles.img}><Image src={reactangle} width={14} height={14} alt='' /></div>
