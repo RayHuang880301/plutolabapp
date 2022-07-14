@@ -19,8 +19,8 @@ const Investors = (props) => {
           {/* w : h = 400 :185 */}
           <Window top={0} left={0} width={360} height={166.5}><Image src={svLogo} alt=''/></Window>
           <Window top={55} left={15} width={280} height={129.5}><Image src={aceLogo} alt=''/></Window>
-          <Window top={-10} left={50} width={320} height={148}><Image src={aceLogo} alt=''/></Window>
-          <Window top={50} left={60} width={360} height={166.5}><Image src={aceLogo} alt=''/></Window>
+          <Window className="desktop" top={-10} left={50} width={320} height={148}><Image src={aceLogo} alt=''/></Window>
+          <Window className="desktop" top={50} left={60} width={360} height={166.5}><Image src={aceLogo} alt=''/></Window>
         </div>
         <div className={styles.bottomCard}>
           <div className={styles.hr}></div>
