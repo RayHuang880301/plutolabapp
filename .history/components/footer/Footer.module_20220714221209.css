@@ -14,12 +14,11 @@
 .mediaBox {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
   width: 150px;
 }
 
 .mediaIcon {
-  margin: 0 0.5rem;
+  margin: 0.5rem;
   cursor: pointer;
 }
 

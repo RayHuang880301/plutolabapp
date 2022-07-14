@@ -61,7 +61,7 @@
 
 .bg {
   flex: none;
-  width: 70%;
+  width: 75%;
 }
 
 .rightBox {
@@ -70,11 +70,11 @@
   align-items: center;
   justify-content: space-between;
   margin: 1rem;
-  width: 30%;
+  width: 25%;
 }
 
 .text {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 400;
 }
 

@@ -26,13 +26,14 @@
 }
 
 .itemBox {
-  margin: 2rem 0;
+  margin: 4rem 0;
+  display: ;
 }
 
 .item {
   margin: 0.5rem 1.5rem;
   font-family: Montserrat;
-  width: 25vw;
+  width: 23%;
   height: 70px;
   background: #056FD8;
   font-size: 32px;
