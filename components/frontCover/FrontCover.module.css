@@ -52,7 +52,7 @@
 	animation: rotateAnimation 4000ms linear infinite;
 }
 .p:hover {
-	/* animation: rotateAnimation 1000ms linear infinite; */
+	animation: rotateAnimation 1500ms linear infinite;
 }
 
 @keyframes rotateAnimation {
