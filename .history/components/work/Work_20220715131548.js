@@ -14,7 +14,7 @@ import studioBg from '../../assets/studioBg.png'
 import demiBg from '../../assets/demiBg.png'
 import Image from 'next/image'
 import marqueeLogo from '../../assets/marqueeLogo.png'
-import ImgCard from '../imgCard/ImgCard'
+import ImgCard from '../ImgCard/ImgCard'
 
 const Work = (props) => {
   const { isAosOn } = props;
