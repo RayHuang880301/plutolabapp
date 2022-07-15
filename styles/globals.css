@@ -31,6 +31,12 @@ a {
   top: 0;
 }
 
+.ReactModal__Overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media only screen and (max-width: 900px) {
   .desktop {
     display: none!important;

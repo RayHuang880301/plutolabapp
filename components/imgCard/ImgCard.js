@@ -45,7 +45,7 @@ export default function ImgCard(props) {
         // onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
         style={customStyles}
-        contentLabel="Example Modal"
+        className={styles.modal}
       >
         <div className={styles.window}>
           <div className={styles.topBox}>
@@ -54,7 +54,7 @@ export default function ImgCard(props) {
             <div className={styles.img} onClick={closeModal}><Image src={close} width={14} height={14} alt='' /></div>
           </div>
           <div className={styles.content}>
-            <div className={styles.bg}><Image src={bg} alt='' /></div>
+            <div className={styles.bg}><Image src={bg} alt='' layout="responsive" /></div>
             <div className={styles.rightBox}>
               <div className={styles.text}>{intro}</div>
               <Link href={link}><a target="_blank" rel="noreferrer"><button className={styles.enterBtn}>Enter</button></a></Link>

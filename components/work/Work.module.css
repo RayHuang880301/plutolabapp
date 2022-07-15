@@ -96,6 +96,25 @@
   0% { transform: translateX(0); }
   100% { transform: translateX(-5%); }
 }
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .title {
+    padding: 1rem;
+  }
+  .itemsMarquee {
+    width: 100%;
+    margin: 0;
+  }
+  .intro {
+    padding: 1rem;
+    width: 100%;
+  }
+  
+} 
+
 /* 
 @media (max-width: 1000px) {
   .container {
