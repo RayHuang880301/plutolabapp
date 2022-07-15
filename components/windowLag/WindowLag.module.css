@@ -50,5 +50,6 @@
   /* padding: 2rem; */
   height: 80%;
   /* width: 80%; */
-  text-align: center;
+  text-align: left;
+  padding: .7rem;
 }

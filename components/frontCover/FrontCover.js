@@ -9,14 +9,8 @@ const initState = {
 const FrontCover = () => {
   const [isAppear, setIsAppear] = useState(1);
   const [init, setInit] = useState(0);
-  // if(!init) {
-  //   console.log(init,isAppear)
-  //   setInit(1);
-  //   setTimeout(() => {
-  //     setIsAppear(0);
-  //     console.log(init,isAppear)
-  //   }, 3000);
-  // }
+
+  
   return (
     <>
     {isAppear ? <Header /> : ''}

@@ -38,7 +38,10 @@
 }
 .p {
   transform: rotateY(45deg);
-	animation: rotateAnimation 4s linear infinite;
+	animation: rotateAnimation 4000ms linear infinite;
+}
+.p:hover {
+	animation: rotateAnimation 600ms linear infinite;
 }
 
 @keyframes rotateAnimation {
