@@ -1,11 +1,18 @@
 .item {
   cursor: pointer;
-  margin: 1rem;
   border-radius: 2rem;
   box-shadow:0 10px 10px rgba(0,0,0,0.5);
   overflow: hidden;
   width: 250px;
   height: 250px;
+}
+.itemCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  width: 300px;
+  height: 300px;
 }
 /* 
 .cardShadow {

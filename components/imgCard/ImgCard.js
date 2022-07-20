@@ -37,8 +37,11 @@ export default function ImgCard(props) {
 
   return (
     <>
-      <div className={styles.item} onClick={openModal} onMouseOver={() => setImgSrc(defaultLogo)} onMouseOut={() => setImgSrc(src)}>
-        <Image layout="fixed" src={imgSrc} width={width} height={height} alt={alt} />
+    
+      <div className={styles.itemCont}>
+        <div className={styles.item} onClick={openModal} onMouseOver={() => setImgSrc(defaultLogo)} onMouseOut={() => setImgSrc(src)}>
+          <Image layout="fixed" src={imgSrc} width={width} height={height} alt={alt} />
+        </div>
       </div>
       <Modal
         isOpen={modalIsOpen}

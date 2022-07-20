@@ -62,7 +62,7 @@ const DraggableBox = memo(function DraggableBox(
       onMouseDown={onClick}
       className={`draggable-box ${isAosOn ? 'aos-animate' : ''}`}
     >
-      <WindowLag width={400} height={185}><p>{title}</p></WindowLag>
+      <WindowLag width={'40vw'} height={'19vw'}><p>{title}</p></WindowLag>
     </div>
   )
 })

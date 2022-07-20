@@ -1,9 +1,14 @@
 .cardShadow {
-  /* position: absolute; */
+  position: absolute;
   background: #FFFFFF;
   border: 1px solid #000000;
   width: 100%;
   height: 100%;
+
+  min-width: 240px;
+  min-height: 140px;
+  max-width: 430px;
+  max-height: 210px;
 }
 
 .boxShadow {
@@ -14,12 +19,16 @@
 
 .window {
   cursor: move;
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
-  text-align: start; */
+  text-align: start;
+  min-width: 240px;
+  min-height: 140px;
+  max-width: 430px;
+  max-height: 210px;
   background: #E2E2E2;
   border: 1px solid #000000;
 }
@@ -52,4 +61,11 @@
   /* width: 80%; */
   text-align: left;
   padding: 2rem;
+}
+
+@media screen and (max-width: 468px) {
+  .content {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
 }

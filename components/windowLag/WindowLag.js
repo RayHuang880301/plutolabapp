@@ -17,15 +17,15 @@ const WindowLag = (props) => {
   const [windowStyle, setWindowStyle] = useState({
     top: `${top}%`,
     left: `${left}%`,
-    width: `${width}px`,
-    height: `${height}px`
+    width: `${width}`,
+    height: `${height}`
   })
 
   const [cardStyle, setCardStyle] = useState({
-    top: `${top+2}%`,
-    left: `${left+0.6}%`,
-    width: `${width}px`,
-    height: `${height}px`
+    top: `15px`,
+    left: `15px`,
+    width: `${width}`,
+    height: `${height}`
   })
 
   const handle = (e) => {
@@ -47,9 +47,9 @@ const WindowLag = (props) => {
     //     onStop={handle}
     //      >
       <div>
-        {/* <div className={styles.cardShadow} style={cardStyle}>
+        <div className={styles.cardShadow} style={cardStyle}>
           <div className={styles.boxShadow} />
-        </div> */}
+        </div>
         <div className={styles.window} style={windowStyle}>
           <div className={styles.topBox}>
             <div className={styles.img}><Image src={substract} width={14} height={14} alt='' /></div>

@@ -40,7 +40,7 @@ const Work = (props) => {
             <ImgCard src={studio} defaultLogo={studioDefaultLogo} bg={studioBg} link="https://opensea.io/collection/pluto-studio-nft" intro="Lil Pluto is making music! Pluto Studio is the exclusive studio for every Lil Pluto." width={250} height={250} alt=''/>
             <ImgCard src={demi} defaultLogo={demiDefaultLogo} bg={demiBg} link="https://opensea.io/assets/ethereum/0x0d2d8caaa06547c167f391b8c08f248a94b7b74d/1" intro="Pluto Lab x Demi-Human Studio" width={250} height={250} alt=''/>
             {/* TODO: demi */}
-            <ImgCard src={pluto} defaultLogo={plutoDefaultLogo} bg={plutoBg} link="https://plutohiphopdept.com/" intro="Lil Pluto, the OG pass for the Pluto Metaverse, 3333 Unique Creatures living on Pluto." width={250} height={250} alt=''/>
+            {/* <ImgCard src={pluto} defaultLogo={plutoDefaultLogo} bg={plutoBg} link="https://plutohiphopdept.com/" intro="Lil Pluto, the OG pass for the Pluto Metaverse, 3333 Unique Creatures living on Pluto." width={250} height={250} alt=''/> */}
           </div>
         </div>
         <div className={styles.intro}>

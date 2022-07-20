@@ -36,16 +36,27 @@
     opacity: 0; 
   }
 }
+.pcont {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.pcont:hover > .p {
+  animation: rotateAnimation 1000ms linear infinite;
+}
+
 .p {
-  transform: rotateY(45deg);
+  /* transform: rotateY(45deg); */
+  width: 300px;
+  margin: 0 auto;
 	animation: rotateAnimation 4000ms linear infinite;
 }
 .p:hover {
-	animation: rotateAnimation 600ms linear infinite;
+	/* animation: rotateAnimation 1000ms linear infinite; */
 }
 
 @keyframes rotateAnimation {
 	0% {transform: rotateY(0deg);}
 	50% {transform: rotateY(180deg);}
-  100% {transform: rotateY(360deg);}
+  100% {transform: rotateY(0deg);}
 }
