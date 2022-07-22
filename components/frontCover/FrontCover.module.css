@@ -46,6 +46,7 @@
 }
 
 .p {
+  overflow: visible;
   /* transform: rotateY(45deg); */
   width: 300px;
   margin: 0 auto;
