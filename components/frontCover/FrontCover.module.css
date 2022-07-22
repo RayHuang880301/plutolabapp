@@ -45,14 +45,14 @@
   animation: rotateAnimation 1000ms linear infinite;
 }
 
-.p {
+.p > span {
   overflow: visible;
   /* transform: rotateY(45deg); */
   width: 300px;
   margin: 0 auto;
 	animation: rotateAnimation 4000ms linear infinite;
 }
-.p:hover {
+.p:hover > span {
 	animation: rotateAnimation 600ms linear infinite;
 }
 
