@@ -1,0 +1,63 @@
+.section {
+  background-color: #056FD8;
+  color: white;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.title {
+  flex: none;
+}
+
+.title > h1 {
+  /* padding: 2rem 0 0 0; */
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.windowBox {
+  flex: auto;
+  width: auto;
+  position: relative;
+}
+
+.bottomCard {
+  flex: none;
+  display: flex;
+  align-items: flex-end;
+  margin: 2rem 0;
+}
+
+.hr {
+  margin-right: 2rem;
+  height: 40px;
+  flex: auto;
+  border-top: 1px solid white;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+  .title {
+    padding: 0 1rem;
+  }
+  .title > h1 {
+    font-size: 36px;
+    font-weight: 800;
+  }
+  .windowBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+} 
