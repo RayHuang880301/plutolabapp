@@ -24,6 +24,7 @@
 }
 
 .copyright {
+  text-align: end;
   margin-bottom: 4px;
   width: 150px;
   font-weight: 600;
@@ -37,6 +38,6 @@
     cursor: pointer;
   }
   .copyright {
-    font-size: x-small;
+    font-size: small;
   }
 } 
