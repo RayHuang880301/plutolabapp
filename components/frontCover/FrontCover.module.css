@@ -62,7 +62,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .p {
-    animation-play-state: paused;
+  .pcont {
+    width: 100%;
   }
 }
