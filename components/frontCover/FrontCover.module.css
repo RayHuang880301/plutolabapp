@@ -66,4 +66,7 @@
   .pcont {
     width: 100%;
   }
+  .p > span {
+    animation: none!important;
+  }
 }
