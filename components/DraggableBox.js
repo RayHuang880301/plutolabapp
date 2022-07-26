@@ -38,7 +38,6 @@ const DraggableBox = memo(function DraggableBox(
       type: ItemTypes.BOX,
       item: { id, left, top, title },
       collect: (monitor) => {
-        console.log('monitor', monitor)
         return {
           isDragging: monitor.isDragging()
         }

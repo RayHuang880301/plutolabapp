@@ -29,7 +29,6 @@ const WindowLag = (props) => {
   })
 
   const handle = (e) => {
-    console.log(e)
   }
   const nodeRef = React.useRef(null);
 

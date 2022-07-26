@@ -25,7 +25,7 @@ const Work = (props) => {
     <div className={styles.section}>
       <div className={styles.container}>
         <div className={`${styles.title} ${isAosOn ? 'aos-animate' : ''}`} data-aos="fade-right" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
-          <h1>Previous Work</h1>
+          <h1>Collections</h1>
         </div>
         <div className={styles.itemsMarquee}>
           <div className={styles.items}>
