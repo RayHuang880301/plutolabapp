@@ -108,7 +108,7 @@ const onClickDrag = (key) => {
           <Image src={plutoLabLogo} width={400} height={270} alt=''/>
         </div>
         <div className={`${styles.bottomCard} ${isAosOn ? 'aos-animate' : ''}`} data-aos="fade-down" data-aos-easing="linear" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
-          <h2>Collections</h2>
+          <h2>Gallery</h2>
           <div className={styles.arrow}><Image src={downArrow} width={30} height={30} alt=''/></div>
         </div>
       </div>

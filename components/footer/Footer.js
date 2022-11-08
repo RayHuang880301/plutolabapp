@@ -11,7 +11,7 @@ const Footer = () => {
     <div className={styles.section}>
       <Image src={plutoLabImg} width={150} height={50} alt=''/>
       <div className={styles.mediaBox}>
-        <div className={styles.mediaIcon}><Link href="https://twitter.com/phhd_nft"><a target="_blank" rel="noreferrer"><Image src={twLogo} width={50} height={50} alt=''/></a></Link></div>
+        <div className={styles.mediaIcon}><Link href="https://twitter.com/plutolab_"><a target="_blank" rel="noreferrer"><Image src={twLogo} width={50} height={50} alt=''/></a></Link></div>
         <div className={styles.mediaIcon}><Link href="https://discord.gg/plutolab"><a target="_blank" rel="noreferrer"><Image src={dcLogo} width={50} height={50} alt=''/></a></Link></div>
       </div>
       <div className={styles.copyright}>Pluto Lab © 2022</div>

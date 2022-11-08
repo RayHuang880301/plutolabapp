@@ -13,9 +13,9 @@ const Contact = (props) => {
           <h1>Contact Pluto</h1>
         </div>
         <div className={styles.itemBox}>
-          <Link href="https://www.instagram.com/plutolab_official/"><a target="_blank" rel="noreferrer"><button className={styles.item}>Instagram</button></a></Link>
+          <Link href="https://www.instagram.com/plutolab.official/"><a target="_blank" rel="noreferrer"><button className={styles.item}>Instagram</button></a></Link>
           <Link href="https://discord.gg/plutolab"><a target="_blank" rel="noreferrer"><button className={styles.item}>Discord</button></a></Link>
-          <Link href="https://twitter.com/phhd_nft"><a target="_blank" rel="noreferrer"><button className={styles.item}>Twitter</button></a></Link>
+          <Link href="https://twitter.com/plutolab_"><a target="_blank" rel="noreferrer"><button className={styles.item}>Twitter</button></a></Link>
           <Link href="mailto: service@plutolab.io"><button className={styles.item}>E-mail</button></Link>
         </div>
       </div>
